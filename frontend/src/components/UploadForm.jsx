@@ -26,7 +26,7 @@ const UploadForm = () => {
 
 
         try {
-            const res = await axios.post("http://localhost:8080/api/upload", formData, {
+            const res = await axios.post("https://linkbinbackend.onrender.com/api/upload", formData, {
                 headers: { "Content-Type": "multipart/form-data" },
             });
             setResponse(res.data);
