@@ -14,7 +14,7 @@ const uploadFile = async (req, res) => {
     });
 
     await file.save();
-    res.status(200).json({ message: "File uploaded", fileId: file._id, downloadLink: `http://localhost:8080/api/file/${file._id}` });
+    res.status(200).json({ message: "File uploaded", fileId: file._id, downloadLink: `https://linkbinbackend.onrender.com/api/file/${file._id}` });
 }
 
 
